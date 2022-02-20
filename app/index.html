@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="search engine">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="copyright" content="steve">
+    <meta name="author" content="steve">
+    <meta property="og:title" content="S-NET">
+    <meta property="og:url" id="og_url" content="steve-network.web.app">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://storage.googleapis.com/steve-network.appspot.com/icon.png">
+    <meta property="og:description" content="a search engine service by s-net">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://s0net.github.io/easy.css/icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" herf="css/logo.css">
+    <title>Steve Network</title>
+
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/time.js" defer></script>
+    <script src="https://s0net.github.io/easy.js/easy.js"></script>
+</head>
+
+<body>
+    <div id="laptop_div">
+        <p id="time"></p>
+        <p id="date"></p>
+        <button class="reload" onclick="location.reload();"><i class="icon icon-spinner11 reloader"></i></button>
+        <div class="main">
+            <main>
+                <section class="searchEntry">
+                    <div class="logo">
+                        <span class="blue">S</span>
+                        <span class="green">-</span>
+                        <span class="red">N</span>
+                        <span class="yellow">E</span>
+                        <span class="blue">T</span>
+                    </div>
+                    <form id="searchBar" class="searchBar" role="search">
+                        <input id="search" type="text" autocomplete="off" role="searchbox" />
+                        <div id="clear" class="none button clear" role="button" tabindex="0"
+                            aria-label="Clear search terms">
+                            <i class="icon icon-cross"></i>
+                        </div>
+                        <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit button">
+                            <i class="icon icon-search searchicon"></i>
+                        </button>
+                    </form>
+                </section>
+                <div class="result">
+                    <section class="results">
+                        <div class="statsBar">
+                            <div id="stats" class="stats" aria-live="assertive"></div>
+                        </div>
+                        <div id="searchResults" class="searchResults"></div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <p id="wiki">~powered by wikipedia~</p>
+    </div>
+</body>
+
+</html>

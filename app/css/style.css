@@ -1,0 +1,309 @@
+main,
+.searchEntry,
+.results,
+.results .searchResults .resultItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Kanit', sans-serif;
+    font-size: xx-large;
+    overflow: hidden;
+}
+
+.url{
+    width: 100%;
+}
+
+.site_url{
+    width: 90%;
+    position: absolute;
+    top: 0px;
+}
+
+.url_send{
+    width: 10%;
+    position: absolute;
+    top: 0px;
+    float: right;
+}
+
+main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    min-height: calc(100vh - 60px)
+}
+
+img {
+    display: block
+}
+
+.exclaim {
+    display: inline-block;
+    font-size: 2.5rem;
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg)
+}
+
+.none {
+    display: none
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.searchEntry {
+    position: absolute;
+    top: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.searchEntry .logo {
+    letter-spacing: -5px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px solid black;
+    user-select: none;
+}
+
+.searchBar {
+    width: 90vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    border: 2px solid #e6e6e6;
+    border-radius: 500px;
+}
+
+::selection {
+    color: #222;
+    background: rgb(0, 195, 195);
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    font-size: 0.75rem;
+    text-align: left;
+    letter-spacing: 0.1rem;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    width: 70%;
+}
+
+.button {
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    min-width: 48px;
+    min-height: 48px;
+    outline: none
+}
+
+.searchicon:before{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #3cba54;
+}
+
+.searchButton:hover i {
+    color: #db3236
+}
+
+.searchButton:active i {
+    color: #3cba54
+}
+
+.clear {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #70757a;
+}
+
+.clear:hover {
+    color: #2a2a2b;
+}
+
+.searchEntry .searchBar:hover,
+.searchEntry .searchBar:focus-within {
+    -webkit-box-shadow: 0 8px 20px 8px #e6e6e6;
+    box-shadow: 0 8px 20px 8px #e6e6e6
+}
+
+.results {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 0.5rem 1rem;
+    width: 90vw
+}
+
+.results .statsBar {
+    width: 100%
+}
+
+.results .statsBar .stats {
+    color: #70757a;
+    font-size: 0.75rem
+}
+
+.searchResults {
+    width: 100%
+}
+
+.resultItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0.25rem 0
+}
+
+.resultItem .resultTitle {
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 3px 2px
+}
+
+.resultItem .resultTitle a {
+    color: #1a0dab;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.resultItem .resultTitle a:visited {
+    color: #609
+}
+
+.resultItem .resultTitle a:hover {
+    text-decoration: underline
+}
+
+.resultItem .resultTitle a:focus {
+    outline: 2px solid #000
+}
+
+.resultItem .resultContents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%
+}
+
+.resultItem .resultContents .resultImage {
+    margin-right: 0.5rem;
+}
+
+.resultItem .resultContents .resultText {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-size: large;
+    line-height: 25px;
+    width: 50%;
+    max-height: 60px;
+    text-overflow: ellipsis;
+}
+
+.resultItem .resultContents .resultText .resultDescription {
+    width: 80%;
+}
+
+.bottom_bar {
+    position: absolute;
+    bottom: 1px;
+    right: 5px;
+}
+
+.result {
+    position: absolute;
+    top: 25vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 80%;
+    height: 75%;
+}
+
+#time {
+    position: absolute;
+    top: 2vh;
+    left: 1vh;
+}
+
+#date {
+    position: absolute;
+    bottom: 1vh;
+    left: 1vh;
+}
+
+#wiki {
+    color: rgba(82, 82, 82, 0.63);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 1px;
+}
+
+.reload {
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    background-color: #ff4346;
+    color: white;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    border: 3px solid #5292ff;
+}
+
+.reloader:before{
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+}

@@ -1,0 +1,21 @@
+.blue {
+    color: #3980fa
+}
+
+.red {
+    color: #db3236
+}
+
+.yellow {
+    color: #ffc107
+}
+
+.green {
+    color: #3cba54
+}
+
+.logo {
+    letter-spacing: -4px;
+    font-weight: 900;
+    font-size: 4vh;
+}

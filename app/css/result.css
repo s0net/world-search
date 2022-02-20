@@ -1,0 +1,22 @@
+iframe {
+    height: 20vh;
+    width: 99.5%;
+    border: 1px solid black;
+}
+
+::selection {
+    color: #222;
+    background: white;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+    background-color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
